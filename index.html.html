@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículum – Boris Jose Garzona Chacon</title>
+  <style>
+    :root {
+      --color-header-bg: #1e3a8a;
+      --color-sidebar-bg: #f3f4f6;
+      --color-title: #2563eb;
+      --color-text: #1f2937;
+      --spacing: 1rem;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--color-text);
+      line-height: 1.5;
+      background: #ffffff;
+    }
+    .header {
+      background: var(--color-header-bg);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--spacing) * 1.5);
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.2rem;
+    }
+    .header h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--spacing);
+      max-width: 900px;
+      margin: var(--spacing) auto;
+      padding: 0 var(--spacing);
+    }
+    .sidebar {
+      background: var(--color-sidebar-bg);
+      padding: var(--spacing);
+      border-radius: 8px;
+    }
+    .main {
+      padding: var(--spacing);
+    }
+    .section-title {
+      font-size: 1.1rem;
+      color: var(--color-title);
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: var(--color-title);
+      margin-top: 4px;
+    }
+    .sidebar ul,
+    .main p {
+      margin-top: 0.5rem;
+    }
+    .sidebar ul li {
+      margin-bottom: 0.4rem;
+      list-style: none;
+    }
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Boris Jose Garzona Chacon</h1>
+    <h2>Estudiante en Ingeniería en Informática y Sistemas</h2>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <section>
+        <h3 class="section-title">Contacto</h3>
+        <ul>
+          <li>📞 (502) 1234-5678</li>
+          <li>✉️ bjgarzonachacon@gmail.com</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="section-title">Habilidades</h3>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación asertiva</li>
+          <li>Resolución de problemas</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="section-title">Educación</h3>
+        <ul>
+          <li>Bachiller en Ciencias y Letras</li>
+          <li>Actualmente estudiando Ingeniería en Informática y Sistemas</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section>
+        <h3 class="section-title">Acerca de mí</h3>
+        <p>
+          Soy una persona resiliente, proactiva, puntual, responsable,
+          busco constantemente el crecimiento personal y académico.
+          Actualmente, me encuentro estudiando Ingeniería en Informática
+          y Sistemas.
+        </p>
+      </section>
+
+      <section>
+        <h3 class="section-title">Habilidades técnicas</h3>
+        <ul>
+          <li>Programación en C++</li>
+          <li>HTML y CSS</li>
+          <li>JavaScript</li>
+          <li>Git y GitHub</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="section-title">Referencias</h3>
+        <ul>
+          <li>Mariandree Garzona – Licenciada en Administración de Empresas</li>
+          <li>Mario Mansilla – Ingeniero Civil</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
